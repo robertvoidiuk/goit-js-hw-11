@@ -5,12 +5,25 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
+  <title>goit-js-hw-11</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-
+  <section>
+    <form class="search-form">
+      <input class="input-form" type="text" name="input" id="name" placeholder="Search images..." required />
+      <button class="search-btn" type="submit">Search</button>
+    </form>
+    <div class="wrapper"><span class="loader is-hide"></span></div>
+    <ul class="gallery"></ul>
+  </section>
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./js/pixabay-api.js"></script>
 </body>
 
 </html>
